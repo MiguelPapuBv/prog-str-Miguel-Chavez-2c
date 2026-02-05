@@ -1,8 +1,12 @@
 import java.util.Scanner;
 public class Validar {
     Scanner sc = new Scanner(System.in);
+    public double leerRango(Scanner sc, String mensaje, double min, double max){
+        return 0;
+    }
 
     public int getValDis(Scanner sc, String mensaje) {
+
         int dis;
         int totdis;
         while (true) {
@@ -19,7 +23,7 @@ public class Validar {
                 } else if (dis > 50 && dis <= 200) {
                     totdis = 60;
                     return totdis;
-                } else if (dis > 200) {
+                } else if (dis > 2000) {
                     totdis = 120;
                     return totdis;
                 }
