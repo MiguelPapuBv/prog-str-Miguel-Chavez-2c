@@ -1,65 +1,61 @@
 import java.util.Scanner;
+
 public class Validar {
-    Scanner sc = new Scanner(System.in);
-    public double leerRango(Scanner sc, String mensaje, double min, double max){
-        return 0;
+
+    public double leerDoubleEnRango(Scanner sc, String msg, double min, double max) {
+        double valor;
+        do {
+            System.out.print(msg);
+            while (!sc.hasNextDouble()) {
+                System.out.println("Error: Ingrese un número válido.");
+                System.out.print(msg);
+                sc.next();
+            }
+            valor = sc.nextDouble();
+            if (valor < min || valor > max) {
+                System.out.println("Error: Rango inválido (" + min + " - " + max + ")");
+            }
+        } while (valor < min || valor > max);
+        return valor;
     }
 
-    public int getValDis(Scanner sc, String mensaje) {
-
-        int dis;
-        int totdis;
-        while (true) {
-            if (sc.hasNextInt()) {
-                dis = sc.nextInt();
-                if (dis<0){
-                    System.out.println("El numero no es positivo");
-                }
-
-                else if (dis <= 50) {
-                    totdis = 20;
-                    return totdis;
-
-                } else if (dis > 50 && dis <= 200) {
-                    totdis = 60;
-                    return totdis;
-                } else if (dis > 2000) {
-                    totdis = 120;
-                    return totdis;
-                }
-            } else{
-                System.out.println("El valor no es numerico");
-                sc.nextLine();
+    public int leerIntEnRango(Scanner sc, String msg, int min, int max) {
+        int valor;
+        do {
+            System.out.print(msg);
+            while (!sc.hasNextInt()) {
+                System.out.println("Error: Ingrese un número entero.");
+                System.out.print(msg);
+                sc.next();
             }
-        }
-
-
+            valor = sc.nextInt();
+            if (valor < min || valor > max) {
+                System.out.println("Error: Opción inválida.");
+            }
+        } while (valor < min || valor > max);
+        return valor;
     }
 
-    public int getValOpc(Scanner sc, String mensaje){
-        int opc;
-        int viaje;
-        while (true) {
-            if (sc.hasNextInt()) {
-                opc = sc.nextInt();
-                if (opc<0){
-                    System.out.println("El numero no es positivo");
-                }
-
-                else if (opc == 1) {
-                    viaje = 50;
-                    return viaje;
-
-                } else if (opc == 2) {
-                    viaje = 90;
-                    return viaje;
-                }
-            } else{
-                System.out.println("El valor no es numerico");
-                sc.nextLine();
-            }
+    public boolean leerBoolean(Scanner sc, String msg) {
+        System.out.print(msg);
+        while (!sc.hasNextBoolean()) {
+            System.out.println("Error: Escriba 'true' o 'false'.");
+            System.out.print(msg);
+            sc.next();
         }
+        return sc.nextBoolean();
+    }
 
+    public void imprimirTicket(int serv, double peso, int dist, boolean rem, double sub, double iva, double tot) {
+        System.out.println("==================================");
+        System.out.println("       TICKET DE ENVÍO");
+        System.out.println("Servicio:      " + (serv == 1 ? "Estándar" : "Express"));
+        System.out.println("Peso:          " + peso + " kg");
+        System.out.println("Distancia:     " + dist + " km");
+        System.out.println("Zona Remota:   " + (rem ? "SÍ (+10%)" : "NO"));
+        System.out.println("Subtotal:      $ " +sub+ " (Antes de IVA)");
+        System.out.println("IVA (16%%):     $ " +iva);
+        System.out.println("TOTAL FINAL:   $ %.2f%n" +tot);
 
     }
 }
