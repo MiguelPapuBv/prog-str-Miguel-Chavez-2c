@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/CalificacionesMiguelChavez/CalificacionesMiguelChavez.iml" filepath="$PROJECT_DIR$/CalificacionesMiguelChavez/CalificacionesMiguelChavez.iml" />
       <module fileurl="file://$PROJECT_DIR$/ControlIfElseMiguelChavez/ControlIfElseMiguelChavez.iml" filepath="$PROJECT_DIR$/ControlIfElseMiguelChavez/ControlIfElseMiguelChavez.iml" />
       <module fileurl="file://$PROJECT_DIR$/CotizadorEnvioMiguelChavez/CotizadorEnvioMiguelChavez.iml" filepath="$PROJECT_DIR$/CotizadorEnvioMiguelChavez/CotizadorEnvioMiguelChavez.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/prog-str-Miguel-Chavez-2c.iml" filepath="$PROJECT_DIR$/.idea/prog-str-Miguel-Chavez-2c.iml" />

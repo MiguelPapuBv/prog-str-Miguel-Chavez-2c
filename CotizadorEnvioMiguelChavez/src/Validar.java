@@ -55,7 +55,7 @@ public class Validar {
         System.out.println("Zona Remota:   " + (rem ? "SÍ (+10%)" : "NO"));
         System.out.println("Subtotal:      $ " +sub+ " (Antes de IVA)");
         System.out.println("IVA (16%%):     $ " +iva);
-        System.out.println("TOTAL FINAL:   $ %.2f%n" +tot);
+        System.out.println("TOTAL FINAL:   $ " +tot);
 
     }
 }
