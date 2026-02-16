@@ -17,7 +17,7 @@ public class Main {
             System.out.println("3) Baja la logica por ID");
             System.out.println("4) Listar activas");
             System.out.println("5) Actualizar nombre por ID (solo activas)");
-            System.out.println("0) Salir");
+            System.out.println("6) Salir");
             opc = sc.nextInt();
 
             switch (opc) {
@@ -33,6 +33,7 @@ public class Main {
                     //Contador
                     contador++;
                     System.out.println("Persona registrada correctamente.");
+                    break;
                 case 2:
                     System.out.println("Buscar por ID");
                     System.out.println("Ingresa el  ID que quieres buscar");
@@ -40,15 +41,28 @@ public class Main {
                     //ciclo que muestra los datos existentes mientras se desplaza
                     for (int i = 0; i < contador; i++) {
                         //if que busca y compara el id que ingresas
+                        if(personas[i].isActive()){
                         if (personas[i].getId() == buscarid) {
                             System.out.println("ID: " + personas[i].getId());
                             System.out.println("Nombre: " + personas[i].getName());
                             System.out.println("Activo: " + personas[i].isActive());
-                            System.out.println("-------------------");
+                        } }else {
+                            System.out.println("Inactiva");
                         }
                     }
                     break;
                 case 3:
+                    System.out.println("Ingrese el ID que daras de baja");
+                    buscarid = sc.nextInt();
+                    for (int i = 0; i < contador; i++) {
+                        if (personas[i].getId() == buscarid){
+                            //Aqui cambia su estado a false y "desaparece" de la lista
+                            personas[i].setActive(false);
+                        }
+                    }
+                    break;
+
+                case 4:
                     System.out.println("Listas Activas");
                     //ciclo for que ayuda a mostar solo las personas activas
                     //si ingresamos 3 personas solo mostrara esas tres
@@ -59,10 +73,11 @@ public class Main {
                             System.out.println("ID: " + personas[i].getId());
                             System.out.println("Nombre: " + personas[i].getName());
                             System.out.println("Activo: " + personas[i].isActive());
-                            System.out.println("-------------------");
                         }
                     }
-                case 4:
+                    break;
+
+                case 5:
                     System.out.println("Actualizar nombre por ID");
                     System.out.println("Ingresa el  ID que quieres buscar");
                     int actid = sc.nextInt();
@@ -74,9 +89,10 @@ public class Main {
                             personas[i].setName(name);
                         }
                     }
-
-                case 5:
-                    System.out.println("Saliste");
+                    break;
+                case 6:
+                    System.out.println("vuelva pronto :)");
+                    System.exit(0);
             }
 
         }while(opc != 0);
