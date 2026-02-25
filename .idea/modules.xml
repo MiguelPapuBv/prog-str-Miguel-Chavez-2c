@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ArreglosEjercicio/ArreglosEjercicio.iml" filepath="$PROJECT_DIR$/ArreglosEjercicio/ArreglosEjercicio.iml" />
       <module fileurl="file://$PROJECT_DIR$/ControlIfElseMiguelChavez/ControlIfElseMiguelChavez.iml" filepath="$PROJECT_DIR$/ControlIfElseMiguelChavez/ControlIfElseMiguelChavez.iml" />
       <module fileurl="file://$PROJECT_DIR$/CotizadorEnvioMiguelChavez/CotizadorEnvioMiguelChavez.iml" filepath="$PROJECT_DIR$/CotizadorEnvioMiguelChavez/CotizadorEnvioMiguelChavez.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjmploArreglos/EjmploArreglos.iml" filepath="$PROJECT_DIR$/EjmploArreglos/EjmploArreglos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Herencia/Herencia.iml" filepath="$PROJECT_DIR$/Herencia/Herencia.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/prog-str-Miguel-Chavez-2c.iml" filepath="$PROJECT_DIR$/.idea/prog-str-Miguel-Chavez-2c.iml" />
       <module fileurl="file://$PROJECT_DIR$/proyecto01/proyecto01.iml" filepath="$PROJECT_DIR$/proyecto01/proyecto01.iml" />
     </modules>
