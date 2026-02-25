@@ -1,44 +1,37 @@
 public class ShippingCalculator {
-    public ShippingCalculator(){
 
-    }
-    public final double IVA = 0.16;
-    private final double PRECIO_EXPRESS=50;
-    private final double PRECIO_ESTANDAR=50;
-    private double pesoKg;
-    private int distanciaKm;
-    private int tipoServicio;
-    private boolean zonaRemota;
+    public double calcularSubtotal(double pesoKg, int distanciaKm, int tipoServicio, boolean zonaRemota) {
+        double costo = 0.0;
 
-    public double getPesoKg() {
-        return pesoKg;
-    }
+        if (tipoServicio == 1) {
+            costo = 50.0;
+        } else {
+            costo = 90.0;
+        }
 
-    public void setPesoKg(double pesoKg) {
-        this.pesoKg = pesoKg;
-    }
 
-    public int getDistanciaKm() {
-        return distanciaKm;
-    }
+        costo += (pesoKg * 12.0);
 
-    public void setDistanciaKm(int distanciaKm) {
-        this.distanciaKm = distanciaKm;
-    }
+        if (distanciaKm <= 50) {
+            costo += 20.0;
+        } else if (distanciaKm <= 200) {
+            costo += 60.0;
+        } else {
+            costo += 120.0;
+        }
 
-    public int getTipoServicio() {
-        return tipoServicio;
+        if (zonaRemota) {
+            costo = costo * 1.10;
+        }
+
+        return costo;
     }
 
-    public void setTipoServicio(int tipoServicio) {
-        this.tipoServicio = tipoServicio;
+    public double calcularIVA(double subtotal) {
+        return subtotal * 0.16;
     }
 
-    public boolean isZonaRemota() {
-        return zonaRemota;
-    }
-
-    public void setZonaRemota(boolean zonaRemota) {
-        this.zonaRemota = zonaRemota;
+    public double calcularTotal(double subtotal, double iva) {
+        return subtotal + iva;
     }
 }
