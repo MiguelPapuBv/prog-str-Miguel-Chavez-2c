@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-<<<<<<< HEAD
-      <module fileurl="file://$PROJECT_DIR$/ArreglosEjercicio/ArreglosEjercicio.iml" filepath="$PROJECT_DIR$/ArreglosEjercicio/ArreglosEjercicio.iml" />
-=======
-      <module fileurl="file://$PROJECT_DIR$/Arreglos_Menu/Arreglos_Menu.iml" filepath="$PROJECT_DIR$/Arreglos_Menu/Arreglos_Menu.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Arreglos_alumnos_ID/Arreglos_alumnos_ID.iml" filepath="$PROJECT_DIR$/Arreglos_alumnos_ID/Arreglos_alumnos_ID.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CalificacionesMiguelChavez/CalificacionesMiguelChavez.iml" filepath="$PROJECT_DIR$/CalificacionesMiguelChavez/CalificacionesMiguelChavez.iml" />
->>>>>>> 5f586244f6aee26efd922f99df87eaab2a88a70a
-      <module fileurl="file://$PROJECT_DIR$/ControlIfElseMiguelChavez/ControlIfElseMiguelChavez.iml" filepath="$PROJECT_DIR$/ControlIfElseMiguelChavez/ControlIfElseMiguelChavez.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CotizadorEnvioMiguelChavez/CotizadorEnvioMiguelChavez.iml" filepath="$PROJECT_DIR$/CotizadorEnvioMiguelChavez/CotizadorEnvioMiguelChavez.iml" />
-      <module fileurl="file://$PROJECT_DIR$/EjmploArreglos/EjmploArreglos.iml" filepath="$PROJECT_DIR$/EjmploArreglos/EjmploArreglos.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Herencia/Herencia.iml" filepath="$PROJECT_DIR$/Herencia/Herencia.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/prog-str-Miguel-Chavez-2c.iml" filepath="$PROJECT_DIR$/.idea/prog-str-Miguel-Chavez-2c.iml" />
-      <module fileurl="file://$PROJECT_DIR$/proyecto01/proyecto01.iml" filepath="$PROJECT_DIR$/proyecto01/proyecto01.iml" />
-    </modules>
-  </component>
+    <component name="ProjectModuleManager">
+        <modules>
+            <module fileurl="file://$PROJECT_DIR$/ArreglosEjercicio/ArreglosEjercicio.iml" filepath="$PROJECT_DIR$/ArreglosEjercicio/ArreglosEjercicio.iml" />
+            <module fileurl="file://$PROJECT_DIR$/Arreglos_Menu/Arreglos_Menu.iml" filepath="$PROJECT_DIR$/Arreglos_Menu/Arreglos_Menu.iml" />
+            <module fileurl="file://$PROJECT_DIR$/Arreglos_alumnos_ID/Arreglos_alumnos_ID.iml" filepath="$PROJECT_DIR$/Arreglos_alumnos_ID/Arreglos_alumnos_ID.iml" />
+            <module fileurl="file://$PROJECT_DIR$/CalificacionesMiguelChavez/CalificacionesMiguelChavez.iml" filepath="$PROJECT_DIR$/CalificacionesMiguelChavez/CalificacionesMiguelChavez.iml" />
+            <module fileurl="file://$PROJECT_DIR$/ControlIfElseMiguelChavez/ControlIfElseMiguelChavez.iml" filepath="$PROJECT_DIR$/ControlIfElseMiguelChavez/ControlIfElseMiguelChavez.iml" />
+            <module fileurl="file://$PROJECT_DIR$/CotizadorEnvioMiguelChavez/CotizadorEnvioMiguelChavez.iml" filepath="$PROJECT_DIR$/CotizadorEnvioMiguelChavez/CotizadorEnvioMiguelChavez.iml" />
+            <module fileurl="file://$PROJECT_DIR$/EjmploArreglos/EjmploArreglos.iml" filepath="$PROJECT_DIR$/EjmploArreglos/EjmploArreglos.iml" />
+            <module fileurl="file://$PROJECT_DIR$/Herencia/Herencia.iml" filepath="$PROJECT_DIR$/Herencia/Herencia.iml" />
+            <module fileurl="file://$PROJECT_DIR$/.idea/prog-str-Miguel-Chavez-2c.iml" filepath="$PROJECT_DIR$/.idea/prog-str-Miguel-Chavez-2c.iml" />
+            <module fileurl="file://$PROJECT_DIR$/proyecto01/proyecto01.iml" filepath="$PROJECT_DIR$/proyecto01/proyecto01.iml" />
+        </modules>
+    </component>
 </project>
