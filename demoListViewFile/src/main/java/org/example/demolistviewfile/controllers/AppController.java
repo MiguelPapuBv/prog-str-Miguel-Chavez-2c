@@ -24,9 +24,6 @@ public class AppController {
     @FXML
     private TextField txtEmail;
 
-    @FXML
-    private TextField txtEdad;
-
     private ObservableList<String> data = FXCollections.observableArrayList();
     PersonService service= new PersonService();
 
@@ -46,7 +43,6 @@ public class AppController {
         try{
             String name = txtNombre.getText();
             String email = txtEmail.getText();
-            int edad = Integer.parseInt(txtEdad.getText());
             service.addPerson(name,email);
             lblMsg.setText("Usuario creado correctamente");
             lblMsg.setStyle("-fx-text-alignment: green");
