@@ -43,7 +43,7 @@ public class personas {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", isActive=" + isActive +
-                '}';ds
+                '}';
     }
 
     public boolean getisActive() {
